@@ -2,11 +2,9 @@ import { test, expect } from "@playwright/test";
 
 test("Test 1", async ({ page }) => {
   console.log("Starting Test 1 ");
-  await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-  await page.locator('//input[@name="username"]').fill("Admin");
-  await page.locator('//input[@name="password"]').fill("admin123");
-  await page.waitForTimeout(5000);
-  await page.locator('//button[@type="submit"]').click();
+  await page.goto("https://gmail.com/");
+  console.log(await page.title());
+  await expect(page).toHaveTitle("Gmail");
   await page.waitForTimeout(2000);
   console.log("Ending Test 1 ");
 });
