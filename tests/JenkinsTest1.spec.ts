@@ -11,9 +11,9 @@ test("Test 1", async ({ page }) => {
 
 test("Test 2 ", async ({ page }) => {
   console.log("Starting Test 2 ");
-  await page.goto("https://google.com/");
+  await page.goto("https://login.salesforce.com/?locale=in");
   console.log(await page.title());
-  await expect(page).toHaveTitle("Google");//Test
+  await expect(page).toHaveTitle("Login | Salesforce");
   console.log("Ending Test 2");
 });
 
