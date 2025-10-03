@@ -13,7 +13,7 @@ test("Test 2 ", async ({ page }) => {
   console.log("Starting Test 2 ");
   await page.goto("https://google.com/");
   console.log(await page.title());
-  await expect(page).toHaveTitle("Google");
+  await expect(page).toHaveTitle("Google");//Test
   console.log("Ending Test 2");
 });
 
