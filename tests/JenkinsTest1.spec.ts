@@ -2,9 +2,9 @@ import { test, expect } from "@playwright/test";
 
 test("Test 1", async ({ page }) => {
   console.log("Starting Test 1 ");
-  await page.goto("https://gmail.com/");
+  await page.goto("https://www.facebook.com/");
   console.log(await page.title());
-  await expect(page).toHaveTitle("Gmail");
+  await expect(page).toHaveTitle("Facebook – log in or sign up");
   await page.waitForTimeout(2000);
   console.log("Ending Test 1 ");
 });
